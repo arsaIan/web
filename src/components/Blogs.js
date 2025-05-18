@@ -3,15 +3,11 @@ import React from 'react';
 const Blogs = () => {
   const blogPosts = [
     // {
-    //   title: 'Getting Started with React',
+    //   title: 'aaa',
     //   date: '2024-03-20',
-    //   excerpt: 'A comprehensive guide to starting your journey with React...'
+    //   excerpt: ''
     // },
-    // {
-    //   title: 'The Future of Web Development',
-    //   date: '2024-03-15',
-    //   excerpt: 'Exploring upcoming trends and technologies in web development...'
-    // }
+    
   ];
 
   return (
