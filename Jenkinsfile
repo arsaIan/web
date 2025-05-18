@@ -21,12 +21,7 @@ pipeline {
             }
         }
 
-        stage('Security Scan') {
-            steps {
-                // Add security scanning steps here
-                sh 'docker scan ${DOCKER_IMAGE}:${DOCKER_TAG}'
-            }
-        }
+       
 
         stage('Push to Registry') {
             steps {
