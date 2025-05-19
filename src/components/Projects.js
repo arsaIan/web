@@ -8,6 +8,11 @@ const Projects = () => {
       link: 'https://facedrop.arsln.dev'
     },
     {
+      title: 'Scruipts',
+      description: 'Simple self hosted python script manager',
+      link: 'https://github.com/arsaIan/scruipts'
+    },
+    {
       title: 'Shurl',
       description: 'URL Shortener',
       link: 'https://shurl.arsln.dev'
@@ -15,37 +20,37 @@ const Projects = () => {
     {
       title: 'Golru',
       description: 'LRU Cache Implementation in Go with React Dashboard',
-      link: 'https://github.com/SpoonBuoy/golru'
+      link: 'https://github.com/arsaIan/golru'
     },
     {
       title: 'Ruscii',
       description: 'Rust-based simple text art generator',
-      link: 'https://github.com/SpoonBuoy/ruscii'
+      link: 'https://github.com/arsaIan/ruscii'
     },
     {
       title: 'Boolean',
       description: 'C++ Boolean Expression Evaluator',
-      link: 'https://github.com/SpoonBuoy/boolean'
+      link: 'https://github.com/arsaIan/boolean'
     },
     {
       title: 'OSKA',
       description: 'Notification Alerter',
-      link: 'https://github.com/SpoonBuoy/oska'
+      link: 'https://github.com/arsaIan/oska'
     },
     {
       title: 'Img-Dash',
       description: 'Full stack image dashboard',
-      link: 'http://65.0.53.93:3000/'
+      link: 'https://github.com/arsaIan/img-dash'
     },
     {
       title: 'Keymoji',
       description: 'Chrome Extension',
-      link: 'https://github.com/SpoonBuoy/boolean'
+      link: 'https://github.com/arsaIan/keymoji'
     },
     {
       title: 'SPALM',
       description: 'Self Propulsive Auto Landing Machine',
-      link: 'https://github.com/SpoonBuoy/SPALM'
+      link: 'https://github.com/arsaIan/SPALM'
     }
   ];
 
