@@ -19,6 +19,9 @@ RUN npm run build
 # Production stage
 FROM nginx:alpine
 
+# Create log directory
+RUN mkdir -p /var/log/nginx
+
 # Copy built assets from build stage
 COPY --from=build /app/build /usr/share/nginx/html
 
