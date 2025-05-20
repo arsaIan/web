@@ -19,7 +19,7 @@ const Blogs = () => {
         </h1>
         <div className="space-y-6">
           {blogPosts.length === 0 && (
-            <p className="text-muted dark:text-dark-muted text-center">soon...</p>
+            <p className="text-muted dark:text-dark-muted text-center">coming soon...</p>
           )}
           {blogPosts.map((post, index) => (
             <article key={index} className="hover:opacity-80 transition-opacity">
