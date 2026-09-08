@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,14 +27,13 @@ const Navbar = () => {
 
   const menuItems = [
     { name: 'home', path: '/' },
-    { name: 'about', path: '/about' },
     { name: 'projects', path: '/projects' },
     { name: 'blog', path: '/blogs' }
   ];
 
   return (
-    <nav className="w-full bg-background dark:bg-dark-background bg-notebook dark:bg-dark-notebook bg-notebook-horizontal dark:bg-dark-notebook-horizontal">
-      <div className="p-4">
+    <nav className="relative z-10 w-full">
+      <div className="p-4 md:p-8">
         <div className="flex justify-between items-center">
           {/* Menu Button - Only visible on mobile */}
           <button 
@@ -56,12 +56,13 @@ const Navbar = () => {
             <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 p-4 md:p-0">
               {menuItems.map((item) => (
                 <li key={item.name}>
-                  <a 
-                    href={item.path}
+                  <Link
+                    to={item.path}
+                    onClick={() => setIsMenuOpen(false)}
                     className="text-foreground dark:text-dark-foreground hover:text-muted dark:hover:text-dark-muted transition-colors tracking-wide lowercase block"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

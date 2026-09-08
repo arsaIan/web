@@ -55,10 +55,9 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-screen min-h-screen bg-background dark:bg-dark-background bg-notebook dark:bg-dark-notebook bg-notebook-horizontal dark:bg-dark-notebook-horizontal">
-      <div className="p-4 md:p-8">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 tracking-wider lowercase text-foreground dark:text-dark-foreground">
-          Projects
+    <div className="p-4 md:p-8">
+        <h1 className="text-2xl md:text-3xl font-bold mb-8 tracking-wider lowercase text-foreground dark:text-dark-foreground">
+          projects
         </h1>
         <ul className="space-y-4">
           {projects.map((project, index) => (
@@ -77,7 +76,6 @@ const Projects = () => {
             </li>
           ))}
         </ul>
-      </div>
     </div>
   );
 };
